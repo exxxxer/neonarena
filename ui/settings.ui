@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>SettingsDialog</class>
+  <widget class="QDialog" name="SettingsDialog">
+    <property name="windowTitle">
+      <string>Neon Arena — настройки</string>
+    </property>
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>570</width>
+        <height>440</height>
+      </rect>
+    </property>
+    <layout class="QVBoxLayout" name="rootLayout">
+      <property name="spacing">
+        <number>15</number>
+      </property>
+      <property name="leftMargin">
+        <number>22</number>
+      </property>
+      <property name="rightMargin">
+        <number>22</number>
+      </property>
+      <property name="topMargin">
+        <number>22</number>
+      </property>
+      <property name="bottomMargin">
+        <number>22</number>
+      </property>
+      <item>
+        <widget class="QLabel" name="titleLabel">
+          <property name="text">
+            <string>Настройки</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="volumeLabel">
+          <property name="text">
+            <string>Громкость</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QSlider" name="volumeSlider">
+          <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="maximum">
+            <number>100</number>
+          </property>
+          <property name="value">
+            <number>55</number>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QCheckBox" name="muteCheck">
+          <property name="text">
+            <string>Выключить звук</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QCheckBox" name="fullscreenCheck">
+          <property name="text">
+            <string>Начинать в полноэкранном режиме</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QCheckBox" name="particlesCheck">
+          <property name="text">
+            <string>Эффекты попаданий и рывка</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="hintLabel">
+          <property name="text">
+            <string>F11 переключает полный экран во время игры. При потере фокуса забег автоматически ставится на паузу.</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="dialogButtons">
+          <item>
+            <widget class="QPushButton" name="saveButton">
+              <property name="text">
+                <string>Сохранить</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="cancelButton">
+              <property name="text">
+                <string>Отмена</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <resources />
+  <connections />
+</ui>

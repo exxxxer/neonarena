@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>MenuWindow</class>
+  <widget class="QMainWindow" name="MenuWindow">
+    <property name="windowTitle">
+      <string>Neon Arena — выживание на арене</string>
+    </property>
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>790</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <layout class="QVBoxLayout" name="rootLayout">
+        <property name="spacing">
+          <number>15</number>
+        </property>
+        <property name="leftMargin">
+          <number>22</number>
+        </property>
+        <property name="rightMargin">
+          <number>22</number>
+        </property>
+        <property name="topMargin">
+          <number>22</number>
+        </property>
+        <property name="bottomMargin">
+          <number>22</number>
+        </property>
+        <item>
+          <widget class="QLabel" name="brandLabel">
+            <property name="text">
+              <string>NEON ARENA</string>
+            </property>
+            <property name="wordWrap">
+              <bool>true</bool>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QLabel" name="subtitleLabel">
+            <property name="text">
+              <string>ДВИГАЙСЯ. ЦЕЛЬСЯ. ПЕРЕЖИВИ СЛЕДУЮЩУЮ ВОЛНУ.</string>
+            </property>
+            <property name="wordWrap">
+              <bool>true</bool>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QTabWidget" name="tabs">
+            <widget class="QWidget" name="homeTab">
+              <attribute name="title">
+                <string>Арена</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="homeTabLayout">
+                <item>
+                  <layout class="QHBoxLayout" name="homeLayout">
+                    <item>
+                      <widget class="QFrame" name="controlPanel">
+                        <layout class="QVBoxLayout" name="controlsLayout">
+                          <item>
+                            <widget class="QLabel" name="eyebrowLabel">
+                              <property name="text">
+                                <string>ПРОФИЛЬ ПИЛОТА</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QComboBox" name="playerCombo" />
+                          </item>
+                          <item>
+                            <layout class="QHBoxLayout" name="profileActions">
+                              <item>
+                                <widget class="QPushButton" name="addPlayerButton">
+                                  <property name="text">
+                                    <string>+ Новый</string>
+                                  </property>
+                                </widget>
+                              </item>
+                              <item>
+                                <widget class="QPushButton" name="renamePlayerButton">
+                                  <property name="text">
+                                    <string>Имя</string>
+                                  </property>
+                                </widget>
+                              </item>
+                              <item>
+                                <widget class="QPushButton" name="deletePlayerButton">
+                                  <property name="text">
+                                    <string>Удалить</string>
+                                  </property>
+                                </widget>
+                              </item>
+                            </layout>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="profileStatsLabel">
+                              <property name="text">
+                                <string>Рекорд: 0  /  Забегов: 0</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="difficultyLabel">
+                              <property name="text">
+                                <string>Сложность</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QComboBox" name="difficultyCombo">
+                              <item>
+                                <property name="text">
+                                  <string>Легко</string>
+                                </property>
+                              </item>
+                              <item>
+                                <property name="text">
+                                  <string>Нормально</string>
+                                </property>
+                              </item>
+                              <item>
+                                <property name="text">
+                                  <string>Сложно</string>
+                                </property>
+                              </item>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="titleLabel">
+                              <property name="text">
+                                <string>Одно поле.
+Бесконечные волны.</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="descriptionLabel">
+                              <property name="text">
+                                <string>Зачищай арену, выбирай усиления и собирай собственную комбинацию оружия. Новые типы врагов появляются на второй и третьей волнах.</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QPushButton" name="startButton">
+                              <property name="text">
+                                <string>НАЧАТЬ ЗАБЕГ  →</string>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QLabel" name="hintLabel">
+                              <property name="text">
+                                <string>WASD / стрелки — движение
+ЛКМ — стрельба · Space — рывок
+1 / 2 / Q / ПКМ — оружие
+Esc / P — пауза · F11 — полный экран</string>
+                              </property>
+                              <property name="wordWrap">
+                                <bool>true</bool>
+                              </property>
+                            </widget>
+                          </item>
+                        </layout>
+                      </widget>
+                    </item>
+                    <item>
+                      <layout class="QVBoxLayout" name="previewLayout">
+                        <item>
+                          <widget class="QLabel" name="previewLabel">
+                            <property name="text">
+                              <string />
+                            </property>
+                            <property name="wordWrap">
+                              <bool>true</bool>
+                            </property>
+                            <property name="minimumHeight">
+                              <number>240</number>
+                            </property>
+                            <property name="alignment">
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QTextBrowser" name="guideBrowser">
+                            <property name="openExternalLinks">
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </item>
+              </layout>
+            </widget>
+            <widget class="QWidget" name="scoresTab">
+              <attribute name="title">
+                <string>Рекорды</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="scoresTabLayout">
+                <item>
+                  <layout class="QHBoxLayout" name="recordFilters">
+                    <item>
+                      <widget class="QComboBox" name="scoreDifficultyCombo">
+                        <item>
+                          <property name="text">
+                            <string>Все</string>
+                          </property>
+                        </item>
+                        <item>
+                          <property name="text">
+                            <string>Легко</string>
+                          </property>
+                        </item>
+                        <item>
+                          <property name="text">
+                            <string>Нормально</string>
+                          </property>
+                        </item>
+                        <item>
+                          <property name="text">
+                            <string>Сложно</string>
+                          </property>
+                        </item>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="mineCheck">
+                        <property name="text">
+                          <string>Мои забеги</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QCheckBox" name="abandonedCheck">
+                        <property name="text">
+                          <string>Показывать прерванные</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </item>
+                <item>
+                  <widget class="QTableWidget" name="scoresTable">
+                    <property name="columnCount">
+                      <number>7</number>
+                    </property>
+                    <column>
+                      <property name="text">
+                        <string>Игрок</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Очки</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Волна</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Убийства</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Время</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Сложность</string>
+                      </property>
+                    </column>
+                    <column>
+                      <property name="text">
+                        <string>Статус</string>
+                      </property>
+                    </column>
+                    <property name="editTriggers">
+                      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                    </property>
+                    <property name="selectionBehavior">
+                      <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QPushButton" name="exportButton">
+                    <property name="text">
+                      <string>Экспорт таблицы в CSV</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" name="footerLayout">
+            <item>
+              <widget class="QPushButton" name="settingsButton">
+                <property name="text">
+                  <string>Настройки</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="helpButton">
+                <property name="text">
+                  <string>Как играть</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="quitButton">
+                <property name="text">
+                  <string>Выйти</string>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QStatusBar" name="statusbar" />
+  </widget>
+  <resources />
+  <connections />
+</ui>

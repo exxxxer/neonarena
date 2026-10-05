@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>GameWindow</class>
+  <widget class="QMainWindow" name="GameWindow">
+    <property name="windowTitle">
+      <string>Neon Arena — забег</string>
+    </property>
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1160</width>
+        <height>850</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <layout class="QVBoxLayout" name="rootLayout">
+        <property name="spacing">
+          <number>15</number>
+        </property>
+        <property name="leftMargin">
+          <number>22</number>
+        </property>
+        <property name="rightMargin">
+          <number>22</number>
+        </property>
+        <property name="topMargin">
+          <number>22</number>
+        </property>
+        <property name="bottomMargin">
+          <number>22</number>
+        </property>
+        <item>
+          <layout class="QHBoxLayout" name="hudLayout">
+            <item>
+              <widget class="QLabel" name="waveLabel">
+                <property name="text">
+                  <string>ВОЛНА 01</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="scoreLabel">
+                <property name="text">
+                  <string>ОЧКИ 0</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="killsLabel">
+                <property name="text">
+                  <string>УБИЙСТВА 0</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="pauseButton">
+                <property name="text">
+                  <string>Пауза</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="menuButton">
+                <property name="text">
+                  <string>Меню</string>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <layout class="QHBoxLayout" name="meterLayout">
+            <item>
+              <widget class="QLabel" name="healthLabel">
+                <property name="text">
+                  <string>100 / 100 HP</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QProgressBar" name="healthBar" />
+            </item>
+            <item>
+              <widget class="QLabel" name="weaponLabel">
+                <property name="text">
+                  <string>Пульс</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QLabel" name="dashLabel">
+                <property name="text">
+                  <string>Рывок готов</string>
+                </property>
+                <property name="wordWrap">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="QWidget" name="arenaHost">
+            <layout class="QVBoxLayout" name="arenaLayout">
+              <property name="leftMargin">
+                <number>0</number>
+              </property>
+              <property name="rightMargin">
+                <number>0</number>
+              </property>
+              <property name="topMargin">
+                <number>0</number>
+              </property>
+              <property name="bottomMargin">
+                <number>0</number>
+              </property>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="QLabel" name="hintLabel">
+            <property name="text">
+              <string>WASD / стрелки — движение   •   ЛКМ — огонь   •   Space — рывок   •   1 / 2 / Q / ПКМ — оружие   •   F12 — снимок</string>
+            </property>
+            <property name="wordWrap">
+              <bool>true</bool>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QStatusBar" name="statusbar" />
+  </widget>
+  <resources />
+  <connections />
+</ui>

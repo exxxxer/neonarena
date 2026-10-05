@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>UpgradeDialog</class>
+  <widget class="QDialog" name="UpgradeDialog">
+    <property name="windowTitle">
+      <string>Neon Arena — усиление</string>
+    </property>
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>760</width>
+        <height>520</height>
+      </rect>
+    </property>
+    <layout class="QVBoxLayout" name="rootLayout">
+      <property name="spacing">
+        <number>15</number>
+      </property>
+      <property name="leftMargin">
+        <number>22</number>
+      </property>
+      <property name="rightMargin">
+        <number>22</number>
+      </property>
+      <property name="topMargin">
+        <number>22</number>
+      </property>
+      <property name="bottomMargin">
+        <number>22</number>
+      </property>
+      <item>
+        <widget class="QLabel" name="titleLabel">
+          <property name="text">
+            <string>ВОЛНА ЗАЧИЩЕНА</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="subtitleLabel">
+          <property name="text">
+            <string>Выбери одно усиление. После выбора начнётся следующая волна.</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="upgradeButton0">
+          <property name="text">
+            <string>Улучшение 1</string>
+          </property>
+          <property name="minimumHeight">
+            <number>85</number>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="upgradeButton1">
+          <property name="text">
+            <string>Улучшение 2</string>
+          </property>
+          <property name="minimumHeight">
+            <number>85</number>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="upgradeButton2">
+          <property name="text">
+            <string>Улучшение 3</string>
+          </property>
+          <property name="minimumHeight">
+            <number>85</number>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="quitButton">
+          <property name="text">
+            <string>Завершить забег</string>
+          </property>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <resources />
+  <connections />
+</ui>

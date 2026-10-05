@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>ResultDialog</class>
+  <widget class="QDialog" name="ResultDialog">
+    <property name="windowTitle">
+      <string>Neon Arena — результат</string>
+    </property>
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>660</width>
+        <height>550</height>
+      </rect>
+    </property>
+    <layout class="QVBoxLayout" name="rootLayout">
+      <property name="spacing">
+        <number>15</number>
+      </property>
+      <property name="leftMargin">
+        <number>22</number>
+      </property>
+      <property name="rightMargin">
+        <number>22</number>
+      </property>
+      <property name="topMargin">
+        <number>22</number>
+      </property>
+      <property name="bottomMargin">
+        <number>22</number>
+      </property>
+      <item>
+        <widget class="QLabel" name="titleLabel">
+          <property name="text">
+            <string>Забег завершён</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="subtitleLabel">
+          <property name="text">
+            <string />
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="scoreLabel">
+          <property name="text">
+            <string>0</string>
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="detailsLabel">
+          <property name="text">
+            <string />
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="upgradesLabel">
+          <property name="text">
+            <string />
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QLabel" name="saveStatusLabel">
+          <property name="text">
+            <string />
+          </property>
+          <property name="wordWrap">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="resultButtons">
+          <item>
+            <widget class="QPushButton" name="againButton">
+              <property name="text">
+                <string>Ещё раз</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="menuButton">
+              <property name="text">
+                <string>В меню</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <resources />
+  <connections />
+</ui>

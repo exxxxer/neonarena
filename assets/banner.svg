@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="310" viewBox="0 0 720 310">
+<rect width="720" height="310" rx="14" fill="#0b1123"/><g stroke="#20304c" stroke-width="1"><path d="M0 50H720M0 100H720M0 150H720M0 200H720M0 250H720M60 0V310M120 0V310M180 0V310M240 0V310M300 0V310M360 0V310M420 0V310M480 0V310M540 0V310M600 0V310M660 0V310"/></g>
+<g fill="none"><circle cx="355" cy="155" r="90" stroke="#173957" stroke-width="15"/><circle cx="355" cy="155" r="75" stroke="#325f7c" stroke-dasharray="8 9"/><path d="M355 124L335 175L355 164L375 175Z" fill="#35bdd6" stroke="#a9f5ff" stroke-width="3"/>
+<path d="M180 120L150 155L190 160Z" fill="#4c253f" stroke="#ff658f" stroke-width="3"/><path d="M540 112L561 133L540 154L519 133Z" fill="#322844" stroke="#b38aff" stroke-width="3"/><path d="M525 225L540 200L570 200L585 225L570 250L540 250Z" fill="#322844" stroke="#ffbe68" stroke-width="3"/>
+<path d="M350 85V60M359 86V65M285 158H251M465 152H495" stroke="#57edff" stroke-width="3"/></g>
+<text x="25" y="285" fill="#7492ad" font-size="14" font-family="DejaVu Sans, sans-serif">NEON ARENA / SURVIVAL PROTOCOL</text></svg>
